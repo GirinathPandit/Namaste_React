@@ -17,10 +17,11 @@ import UserClass from "./UserClass";
 class About extends React.Component{
     constructor(props){
         super(props);
-        console.log("Parent constructor called");
+        //console.log("Parent constructor called");
+       
     }
     render(){
-       console.log("Parent class rendered") 
+       //console.log("Parent class rendered") 
         return(
                 <div>
                     <h1>About</h1>
@@ -32,7 +33,8 @@ class About extends React.Component{
             ); 
     }
     componentDidMount(){
-        console.log("Parent ComponentDidMount called");
+        //console.log("Parent ComponentDidMount called");
+       
     }
 }
 

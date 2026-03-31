@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Shimmer from "./shimmer";
 import { Link } from "react-router";
 import { RESTAURANT_LINK } from "../utils/constants";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () =>{
     const [listOfRestaurants, setListOfRestaurant] = useState([]);
@@ -22,6 +23,12 @@ const Body = () =>{
         //console.log(listOfRestaurants);
         //console.log("useeffect called");
     };
+
+    const isOnline = useOnlineStatus();
+
+    if(!isOnline){
+        return <h1>🔴 Offline, Please check your internet connection!!</h1>
+    }
     //console.log("Body rendered");
     //console.log(listOfRestaurants);
     //Conditional Rendering
