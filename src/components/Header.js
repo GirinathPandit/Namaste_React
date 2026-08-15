@@ -1,11 +1,9 @@
 import { useEffect, useState, useContext } from "react";
 import {LOGO_LINK} from "../utils/constants";
-import {Link} from "react-router"
+import {Link} from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
-import { useContext } from 'react';
-import { ReactReduxContext } from 'react-redux';
 
 const Header = () => {
     const [btnNameReact, setBtnNameReact] = useState("Login");
