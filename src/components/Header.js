@@ -4,6 +4,7 @@ import {Link} from "react-router"
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
+import store from "../utils/appStore";
 
 const Header = () => {
     const [btnNameReact, setBtnNameReact] = useState("Login");
@@ -15,6 +16,7 @@ const Header = () => {
         console.log("UseEffect Called");
     });*/
 
+    console.log('store:', store);
     //Subscribing to the store using a selector.
     const cartItems = useSelector((store) => store.cart.items);
 
