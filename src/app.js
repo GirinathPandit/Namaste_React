@@ -5,7 +5,7 @@ import Body from "./components/Body";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import RestaurantMenu from "./components/RestaurantMenu";
 //import Grocery from "./components/Grocery";
 import UserContext from "./utils/UserContext";
@@ -26,6 +26,8 @@ const AppLayout = () => {
         };
         setUserName(data.name);
     },[]);
+
+    console.log('appStore state (from app layout):', appStore.getState());
 
     return (
         <Provider store={appStore}>
