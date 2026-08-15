@@ -17,15 +17,19 @@
   "author": "Girinath Pandit",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.12.0",
+    "parcel": "^2.16.4",
     "process": "^0.11.10"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.12.0",
+    "@tailwindcss/postcss": "^4.2.2",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-redux": "^9.3.0",
     "react-router": "^7.8.1",
-    "react-router-dom": "^7.7.1"
+    "react-router-dom": "^7.7.1",
+    "tailwindcss": "^4.2.2"
   },
   "browserlist": [
     "last 2 version"
